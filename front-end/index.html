@@ -1,47 +1,85 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Groupomania</title>
+    <meta name="description" content="chat d'entreprise">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    <main>
 
-        <div>
-
-            <form method="post" action="http://localhost:3000/api/auth/login">
-                <label for="email"></label>
-                <input type="email" id="email" placeholder="email">
-                <label for="password"></label>
-                <input type="password" id="password" placeholder="password">
-                <button type="submit" id="submit">Connexion</button>
-            </form>
-        </div>
-
-        <br><br><br>
-        <section>
-
-
-
-            <form method='post' action='http://localhost:3000/api/auth/signup'>
-                <div>
-                    <label for="last_name"></label>
-                    <input type="text" name="lastname" placeholder="Nom">
-                    <label for="first_name"></label>
-                    <input type="text" name="firstname" placeholder="Prénom">
-                    <label for="email"></label>
-                    <input type="text" name="email" placeholder="Email">
-                    <div class="psw-section">
-                        <label for="password"></label>
-                        <input type="text" name="password" placeholder="Mot de passe">
+<body id="page-top">
+    <section class="callout" style="background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%) center center / cover no-repeat, url(&quot;assets/img/portfolio-2.jpg&quot;) center center / cover no-repeat, url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;);">
+        <div class="container text-center">
+            <button type="submit" id="submit2">S'inscrire</button>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 jumbotron-fluid">
+                        <alert>
+                            <div id="overlay"></div>
+                            <div id="alertPanel">
+                                <h3 class="py-4 text-center h4">Connection</h3>
+                                <div class="flex text-center py-0">
+                                    <form method='post' action='http://localhost:3000/api/auth/signup'>
+                                        
+                                            <label for="last_name"></label>
+                                            <input type="text" name="lastname" placeholder="Nom">
+                                            <label for="first_name"></label>
+                                            <input type="text" name="firstname" placeholder="Prénom">
+                                            <label for="email"></label>
+                                            <input type="text" name="email" placeholder="Email">
+                                            <label for="password"></label>
+                                            <input type="text" name="password" placeholder="Mot de passe"><br>
+                                            <!-- <button type="submit" id="submit2">S'inscrire</button> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </alert>
                     </div>
-                    <button type="submit" id="submit2">S'inscrire</button>
-            </form>
-
-
-        </section>
-        <script src="./script.js"></script>
-    </main>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 jumbotron-fluid">
+                        <alert>
+                            <div id="overlay-login"></div>
+                            <div id="alertPanel-login">
+                                <h3 class="py-4 text-center h4">Connection</h3>
+                                <div class="flex text-center py-0">
+                                    <form method="post" action="http://localhost:3000/api/auth/login">
+                                        <label for="email"></label>
+                                        <input type="email" id="email" placeholder="email">
+                                        <label for="password"></label>
+                                        <input type="password" id="password" placeholder="password"><br>
+                                        <button type="submit" id="submit">Connexion</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </alert>
+                    </div>
+                </div>
+            </div>
+            <h2 class="mx-auto mb-5">
+                <span class="text-uppercase text-danger border rounded-pill border-light shadow-lg" style="margin: 0px;padding: 8px;">Groupomania</span>
+                <span class="text-light" style="font-size: 44px;"><br>Chat d'entreprise<br></span>
+            </h2>
+            <a id="connection" class="btn btn-info border rounded-pill border-light shadow-lg btn-xl" role="button" href="#" style="font-size: 20px;box-shadow: 0px 0px;">Connection</a>
+            <a id="inscription" class="btn btn-info border rounded-pill border-light shadow-lg btn-xl" role="button" href="#" style="font-size: 20px;margin-left: 55px;">Inscription</a>
+        </div>
+    </section>
+    
+    <footer class="footer text-center" style="width: auto;height: 0px;padding: 0;">
+        <p class="text-center text-muted mb-0 small" style="height: auto;width: auto;">Copyright &nbsp;© Jean-sébastien DEHAUT 2021</p>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/stylish-portfolio.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./script2.js"></script>
 </body>
+
 </html>
