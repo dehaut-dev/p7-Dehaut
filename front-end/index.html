@@ -14,7 +14,6 @@
 <body id="page-top">
     <section class="callout" style="background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%) center center / cover no-repeat, url(&quot;assets/img/portfolio-2.jpg&quot;) center center / cover no-repeat, url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;);">
         <div class="container text-center">
-            <button type="submit" id="submit2">S'inscrire</button>
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-md-5 jumbotron-fluid">
@@ -23,17 +22,16 @@
                             <div id="alertPanel">
                                 <h3 class="py-4 text-center h4">Connection</h3>
                                 <div class="flex text-center py-0">
-                                    <form method='post' action='http://localhost:3000/api/auth/signup'>
-                                        
+                                    <form class="needs-validation" id="formulaire">
                                             <label for="last_name"></label>
-                                            <input type="text" name="lastname" placeholder="Nom">
+                                            <input class="form-control" id="nom" type="text" name="lastname" placeholder="Nom" required>
                                             <label for="first_name"></label>
-                                            <input type="text" name="firstname" placeholder="Prénom">
+                                            <input class="form-control" id="prenom" type="text" name="firstname" placeholder="Prénom" required>
                                             <label for="email"></label>
-                                            <input type="text" name="email" placeholder="Email">
+                                            <input class="form-control" id="email" type="text" name="email" placeholder="Email" required>
                                             <label for="password"></label>
-                                            <input type="text" name="password" placeholder="Mot de passe"><br>
-                                            <!-- <button type="submit" id="submit2">S'inscrire</button> -->
+                                            <input class="form-control" id="password" type="text" name="password" placeholder="Mot de passe" required><br>
+                                            <button type="submit" id="submit2">S'inscrire</button>
                                     </form>
                                 </div>
                             </div>
@@ -49,11 +47,11 @@
                             <div id="alertPanel-login">
                                 <h3 class="py-4 text-center h4">Connection</h3>
                                 <div class="flex text-center py-0">
-                                    <form method="post" action="http://localhost:3000/api/auth/login">
+                                    <form class="needs-validation" id="formulaire2">
                                         <label for="email"></label>
-                                        <input type="email" id="email" placeholder="email">
+                                        <input class="form-control" id="email2" type="email" placeholder="email">
                                         <label for="password"></label>
-                                        <input type="password" id="password" placeholder="password"><br>
+                                        <input class="form-control" id="password2" type="password" placeholder="password"><br>
                                         <button type="submit" id="submit">Connexion</button>
                                     </form>
                                 </div>
