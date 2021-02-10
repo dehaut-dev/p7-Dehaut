@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 const db = {};
-const sequelize = new Sequelize('defaults', 'root', 'toor', {
+const sequelize = new Sequelize('defaults', 'root', 'root', {
   host: 3306,
   dialect: 'mysql',
   defaults: {

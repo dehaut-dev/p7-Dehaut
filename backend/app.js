@@ -15,7 +15,7 @@ var con = mysql.createConnection({
   database: 'defaults',
   host: 'localhost',
   user: 'root',
-  password: 'toor'
+  password: 'root'
 });
 con.connect(function(err) {
   if (err) throw err;
